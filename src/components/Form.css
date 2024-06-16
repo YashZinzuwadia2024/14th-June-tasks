@@ -1,0 +1,45 @@
+form {
+    padding: 40px;
+    background-color: bisque;
+}
+
+form .fields {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.fields .field {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.fields .field input, .fields .field select {
+    padding: 4px 4px 4px;
+    outline: none;
+}
+
+.field span {
+    color: red;
+}
+
+.buttons {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-weight: 600;
+    color: #fff;
+    background-color: rgb(96, 96, 223);
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: 0.4s all;
+}
+
+.buttons:hover {
+    opacity: 0.8;
+}
+
+.buttons:active {
+    transform: scale(0.8);
+}
